@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# js-interview-assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview:
+Your task is to create a simple currency conversion tool similar to that found on Google, using the front-end framework of your choice (e.g. React, Angular, Vue.js, etc.).
 
-## Available Scripts
+- The application should allow users to select the desired currency to convert from and to, input an amount, and then dynamically display the converted amount. The application should update the converted amount as the user inputs or changes the amount to convert.
+- We recommend you spend a maximum of 2 hours completing this challenge.
+- We won’t be scoring you on the design; please focus on component composition and adhering to best practices in coding.
 
-In the project directory, you can run:
+## Requirements:
 
-### `npm start`
+### Currency Selection:
+1. Provide two select boxes for users to choose the currency to convert from and to.
+1. Fetch a list of currencies from the https://api.currencybeacon.com/v1/currencies API.
+1. Populate the select boxes with the available options returned from API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Currency Conversion:
+1. Allow users to input an amount for the “from” currency.
+1. Fetch converted value from https://api.currencybeacon.com/v1/convert API.
+1. Populate the “to” value based on the value returned from API.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## API Overview:
+- For this assessment, please make use of the following free API resource: https://currencybeacon.com
+- Full documentation can be found here: https://currencybeacon.com/api-documentation
+- You should make use of our demo key in your requests `API_KEY=NHKNUhI53ZApF4IXCOX1DpUj2YTSl2U1`
+- Your application should make use of the following two API calls:
+    - https://api.currencybeacon.com/v1/currencies
+    - https://api.currencybeacon.com/v1/convert
+- *Please ensure that you have carefully studied the API responses and selected the most appropriate nodes for the mapping of data.*
 
-### `npm test`
+## Submission Guidelines:
+- Provide a link to your public repo for us to clone or email us a ZIP of the project.
+- Include clear instructions on how to run your application locally.
+- Document any assumptions or decisions you make during the development process.
+- Submit your completed project within the specified timeframe.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Evaluation Criteria:
+### Functionality:
+Does the application meet the specified requirements? Does it accurately perform currency conversion?
 
-### `npm run build`
+### Code Quality:
+Is the code well-structured, readable, and maintainable? Are best practices followed?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Component Composition:
+Are components appropriately structured and reused? Is there unnecessary duplication?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User Experience:
+Is the user interface intuitive and easy to use? Does it provide clear feedback to users?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Additional Features:
+Are any optional features implemented effectively?
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Notes:
+- You are encouraged to use any additional libraries or tools you find necessary to complete the project efficiently.
+- Please ensure that your project is self-contained and can be easily set up and run by the evaluation team.
+- If you have any questions or need clarification on the requirements, feel free to reach out for assistance. Good luck!
