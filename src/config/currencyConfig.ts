@@ -1,0 +1,1 @@
+export const shortCodeField = 'short_code'

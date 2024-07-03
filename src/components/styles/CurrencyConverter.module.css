@@ -1,0 +1,9 @@
+.currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    border-radius: 5%;
+}
