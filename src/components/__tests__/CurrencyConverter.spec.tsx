@@ -1,8 +1,7 @@
-import {amount, fromCurrency, mockData, sampleCurrencyResponse, toCurrency} from "./mockData/mockData";
+import {sampleCurrencyResponse} from "./mockData/mockData";
 import MockAdapter from "axios-mock-adapter";
 import axios from "axios";
 import {render, screen} from '@testing-library/react';
-import {userEvent} from "@testing-library/user-event";
 import CurrencyConverter from "../CurrencyConverter";
 
 const mock = new MockAdapter(axios);
